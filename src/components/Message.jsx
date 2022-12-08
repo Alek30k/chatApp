@@ -5,7 +5,7 @@ const Message = () => {
     <div className="message owner">
       <div className="messageInfo">
         <img
-          src="https://vivolabs.es/wp-content/uploads/2022/03/perfil-hombre-vivo.png"
+          src="https://media.istockphoto.com/id/1323400501/es/foto/feliz-disparo-a-la-cabeza-de-una-joven-latina-con-fondo-de-expresi%C3%B3n-de-sonrisa-con-espacio-de.jpg?s=612x612&w=0&k=20&c=q9TJAWtBda17lPYhRv1XWlCnQThkbc7f73AZbgIcH4o="
           alt=""
         />
 
@@ -14,7 +14,7 @@ const Message = () => {
       <div className="messageContent">
         <p>hello</p>
         <img
-          src="https://vivolabs.es/wp-content/uploads/2022/03/perfil-hombre-vivo.png"
+          src="https://media.istockphoto.com/id/1323400501/es/foto/feliz-disparo-a-la-cabeza-de-una-joven-latina-con-fondo-de-expresi%C3%B3n-de-sonrisa-con-espacio-de.jpg?s=612x612&w=0&k=20&c=q9TJAWtBda17lPYhRv1XWlCnQThkbc7f73AZbgIcH4o="
           alt=""
         />
       </div>
