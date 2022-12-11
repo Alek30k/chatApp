@@ -25,56 +25,15 @@ const Chats = () => {
 
   return (
     <div className="chats">
-      <div className="userChat">
-        <img
-          src="https://thumbs.dreamstime.com/b/ci%C3%A9rrese-encima-del-retrato-de-la-muchacha-atractiva-hermosa-joven-sonriendo-alegre-mirando-c%C3%A1mara-sobre-el-fondo-blanco-mujer-109133771.jpg"
-          alt=""
-        />
-        <div className="userChatInfo">
-          <span>Jane</span>
-          <p>Hello</p>
+      {Object.entries(chats)?.map((chat) => (
+        <div className="userChat" key={chat[0]}>
+          <img src={chat[1].userInfo.photoURL} alt="" />
+          <div className="userChatInfo">
+            <span>{chat[1].userInfo.displayName}</span>
+            <p>{chat[1].userInfo.lastMessage?.text}</p>
+          </div>
         </div>
-      </div>
-      <div className="userChat">
-        <img
-          src="https://thumbs.dreamstime.com/b/ci%C3%A9rrese-encima-del-retrato-de-la-muchacha-atractiva-hermosa-joven-sonriendo-alegre-mirando-c%C3%A1mara-sobre-el-fondo-blanco-mujer-109133771.jpg"
-          alt=""
-        />
-        <div className="userChatInfo">
-          <span>Jane</span>
-          <p>Hello</p>
-        </div>
-      </div>
-      <div className="userChat">
-        <img
-          src="https://thumbs.dreamstime.com/b/ci%C3%A9rrese-encima-del-retrato-de-la-muchacha-atractiva-hermosa-joven-sonriendo-alegre-mirando-c%C3%A1mara-sobre-el-fondo-blanco-mujer-109133771.jpg"
-          alt=""
-        />
-        <div className="userChatInfo">
-          <span>Jane</span>
-          <p>Hello</p>
-        </div>
-      </div>
-      <div className="userChat">
-        <img
-          src="https://thumbs.dreamstime.com/b/ci%C3%A9rrese-encima-del-retrato-de-la-muchacha-atractiva-hermosa-joven-sonriendo-alegre-mirando-c%C3%A1mara-sobre-el-fondo-blanco-mujer-109133771.jpg"
-          alt=""
-        />
-        <div className="userChatInfo">
-          <span>Jane</span>
-          <p>Hello</p>
-        </div>
-      </div>
-      <div className="userChat">
-        <img
-          src="https://thumbs.dreamstime.com/b/ci%C3%A9rrese-encima-del-retrato-de-la-muchacha-atractiva-hermosa-joven-sonriendo-alegre-mirando-c%C3%A1mara-sobre-el-fondo-blanco-mujer-109133771.jpg"
-          alt=""
-        />
-        <div className="userChatInfo">
-          <span>Jane</span>
-          <p>Hello</p>
-        </div>
-      </div>
+      ))}
     </div>
   );
 };
